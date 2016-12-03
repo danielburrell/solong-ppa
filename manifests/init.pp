@@ -55,8 +55,10 @@ class ppa (
     false   => 'absent',
     default => 'present',
   }
+  
+  Exec["apt-update"] -> Package <| |>
 
-  apt::source { 'fury':
+  apt::source { 'solong-gemfury':
     ensure       => $ensure_source,
     location     => $location,
     release      => $release,
