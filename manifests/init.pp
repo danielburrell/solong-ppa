@@ -56,7 +56,7 @@ class ppa (
     default => 'present',
   }
   
-  Exec["apt-update"] -> Package <| |>
+
 
   apt::source { 'solong-gemfury':
     ensure       => $ensure_source,
