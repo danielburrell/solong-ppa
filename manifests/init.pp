@@ -41,7 +41,7 @@ class ppa (
   $release      = ' ',
   $repos        = '/',
   $include_src  = false,
-  $key          = '01F5EA31B83C705DC22970D7FFB2C86BE76B7011',
+  $key          = 'E76B7011',
   $key_source   = 'pgp.mit.edu',
   $architecture = undef,
   $allow_unsigned = false,
